@@ -1,0 +1,8 @@
+*.jpg
+*.png
+*.csv
+settings.json
+.ipynb_checkpoints/
+test_images/
+train_images/
+.vscode/

@@ -1,0 +1,21 @@
+conda env list
+conda create --name IMG python=3.8
+conda activate IMG
+conda config --add channels conda-forge
+conda config --set solver libmamba
+conda install tensorflow
+conda install pytorch torchvision torchaudio -c pytorch
+conda install numpy -c conda-forge
+conda install matplotlib -c conda-forge
+conda install pandas -c conda-forge
+conda install -c conda-forge seaborn
+conda install -c conda-forge opencv
+conda install -c conda-forge scikit-learn
+conda install tqdm
+conda install prettytable
+conda env remove --name nombre_del_entorno
+conda install -n IMG ipykernel --update-deps --force-reinstall
+conda install -c conda-forge ipywidgets
+pip show ipywidgets
+
+jupyter notebook --notebook-dir D:/my_works/jupyter_ipynbs
