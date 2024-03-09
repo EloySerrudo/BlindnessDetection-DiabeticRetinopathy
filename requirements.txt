@@ -3,6 +3,8 @@ conda create --name IMG python=3.8
 conda activate IMG
 conda config --add channels conda-forge
 conda config --set solver libmamba
+conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0
+pip install tensorflow==2.10
 conda install tensorflow
 conda install pytorch torchvision torchaudio -c pytorch
 conda install numpy -c conda-forge
